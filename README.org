@@ -1,0 +1,49 @@
+* Git configurations
+** .git/config
+#+BEGIN_SRC sh
+[include]
+    path = alias
+[commit]
+    template = commit-message
+#+END_SRC
+** .git/alias
+*** a
+#+BEGIN_SRC sh
+    a = add
+#+END_SRC
+*** ap
+#+BEGIN_SRC sh
+    ap = add --patch
+#+END_SRC
+*** br
+#+BEGIN_SRC sh
+    br = branch
+#+END_SRC
+*** c
+#+BEGIN_SRC sh
+    c = commit
+#+END_SRC
+*** co
+#+BEGIN_SRC sh
+    co = checkout
+#+END_SRC
+*** df
+#+BEGIN_SRC sh
+    df = diff
+#+END_SRC
+*** history
+#+BEGIN_SRC sh
+    history = log --graph --pretty=format:'%Cred%h %Creset%s%nAuthor: %cn <%ce>%nDate: %ci%n'
+#+END_SRC
+*** hs
+#+BEGIN_SRC sh
+    hs = log --graph --date=short --pretty=format:'%Cred%h %C(yellow)%d %Creset%s %n%Cgreen%ci %Cblue%cn <%ce>%n'
+#+END_SRC
+*** ls
+#+BEGIN_SRC sh
+    ls = ls-files
+#+END_SRC
+*** st
+#+BEGIN_SRC sh
+    st = status
+#+END_SRC
