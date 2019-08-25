@@ -43,6 +43,10 @@
 #+BEGIN_SRC sh
     ls = ls-files
 #+END_SRC
+*** new
+#+BEGIN_SRC sh
+    new = !sh -c 'git hs $1@{1}..$1@{0} "$@" --patch'
+#+END_SRC
 *** st
 #+BEGIN_SRC sh
     st = status
