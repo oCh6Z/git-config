@@ -52,3 +52,27 @@
     st = status
 #+END_SRC
 * Git commands
+** Remove last commit
+*** local
+#+BEGIN_SRC sh
+$ git reset --hard HEAD~
+#+END_SRC
+*** remote
+#+BEGIN_SRC sh
+$ git reset --hard HEAD~
+$ git push origin --force
+#+END_SRC
+** Change last commit message
+#+BEGIN_SRC sh
+$ git commit --amend -m "New commit message"
+#+END_SRC
+** Remove branch
+*** local
+#+BEGIN_SRC sh
+$ git branch -d {the_local_branch}
+$ git branch -D {the_local_branch}
+#+END_SRC
+*** remote
+#+BEGIN_SRC sh
+$ git push origin --delete {the_remote_branch}
+#+END_SRC
