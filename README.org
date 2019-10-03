@@ -52,6 +52,10 @@
     st = status
 #+END_SRC
 * Git commands
+** Add alias config
+#+BEGIN_SRC sh
+    git config --local include.path alias
+#+END_SRC
 ** Remove last commit
 *** local
 #+BEGIN_SRC sh
