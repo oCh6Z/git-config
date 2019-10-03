@@ -80,3 +80,8 @@ $ git branch -D {the_local_branch}
 #+BEGIN_SRC sh
 $ git push origin --delete {the_remote_branch}
 #+END_SRC
+* Git-flow commands
+** Git-flow init with default branch naming conventions
+#+BEGIN_SRC sh
+$ git flow init -d
+#+END_SRC
