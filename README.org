@@ -54,7 +54,7 @@
 * Git commands
 ** Add alias config
 #+BEGIN_SRC sh
-    git config --local include.path alias
+$ git config --local include.path alias
 #+END_SRC
 ** Remove last commit
 *** local
